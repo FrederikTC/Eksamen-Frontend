@@ -1,0 +1,52 @@
+<div class="template">
+
+    <h3 style="margin-top: 0.5em;min-height: 1em;">Create Delivery</h3>
+    <hr />
+    <div>
+        <form id="form" style="max-width: 900px;">
+            <div class="row">
+                <div class="col-md-2 ">
+                    <label for="input-deliverydate">Delivery Date</label>
+                </div>
+                <div class="col-md-3">
+                    <input id="input-deliverydate" type="date" name="input-deliverydate" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 ">
+                    <label for="input-fromwarehouse">From Warehouse</label>
+                </div>
+                <div class="col-md-3">
+                    <input id="input-fromwarehouse" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 ">
+                    <label for="input-destination">Destination</label>
+                </div>
+                <div class="col-md-3">
+                    <input id="input-destination">
+                </div>
+            </div>
+
+
+            <div class="row">
+                <p id="status" style="min-height: 1em;margin-top:0.5em"> </p>
+            </div>
+            <div class="row" style="margin-top:2em;">
+                <button class="btn btn-dark">Create Delivery</button>
+            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>ProductID</th>
+                        <th>Quantity</th>
+                        <th>Add to delivery</th>
+                    </tr>
+                </thead>
+                <tbody id="table-rows">
+            </table>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,57 @@
+<div class="template">
+  <h2>Products</h2>
+  <table class="table" style="max-width:1000px;">
+    <thead>
+      <tr>
+        <td>Id</td>
+        <td>Name</td>
+        <td>Price</td>
+        <td>Weight</td>
+      </tr>
+    </thead>
+    <tbody id="table-rows"></tbody>
+  </table>
+
+
+  <div class="modal fade" id="productOrder-modal" tabindex="-1" aria-labelledby="productOrder-modal-label"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="productOrder-modal-label">Order Product</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <div class="row">
+              <div class="col-md-3">
+                <label for="product-id">Product ID</label>
+              </div>
+              <div class="col-md-9">
+                <input id="product-id" placeholder="Enter product ID">
+              </div>
+            </div>
+            <div>
+              <div class="row">
+                <div class="col-md-3">
+                  <label for="product-quantity">Quantity</label>
+                </div>
+                <div class="col-md-9">
+                  <input id="product-quantity" placeholder="Enter Quantity">
+                </div>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+              <p id="status" style="min-height: 1em;margin-top:0.5em;"> </p>
+              <div style="margin-top:2em;">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button id="btn-productOrder" type="button" class="btn btn-primary">Confirm product order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
